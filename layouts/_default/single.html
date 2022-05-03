@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<body width="700 px;">
+    <div class="post-body" style="">
+
+        <p class="reading-time">{{.ReadingTime}} minute read / {{.Date.Format "May 1, 2006" }} /
+{{ if isset .Params "categories" -}}
+  {{ range  $name := .Params.categories -}}
+	{{ with site.GetPage (printf "/%s" ($name | urlize )) -}} 
+		<a class=ph1 href="{{ .RelPermalink }}" title="Bereich: {{ .Name | markdownify}}">{{ .Name | markdownify}}</a>  /  
+	{{- end}}
+  {{- end }}
+{{ end }}
+        </p >
+
+        <h1>{{.Title}} </h1>
+
+        <div class="content"> 
+            {{.Content}}
+        </div>
+        <hr/> 
+        <h4 style="padding-bottom:0px"> Read More: </h4>
+        <h1>
+            {{with .NextInSection}}
+            <a class="blue" href="{{.Permalink}}">{{.Title}}</a>
+            {{end}}
+        </h1>
+
+
+    </div>
+</body>
+
+{{ partial "footer.html" . }}

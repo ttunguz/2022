@@ -1,0 +1,26 @@
+this is a test
+
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<div class="post-body">
+<h2 class="blue" style="text-transform:capitalize">{{ with .GetPage .RelPermalink }}{{.Title}}{{ end }}
+{{ range .Pages.GroupByDate "2006" }}
+
+</h2>
+
+<table width="100%">
+    {{ range .Pages }}
+    <tr>
+        <td width="70%" style="padding-top:10px">
+            <a class="title" style="max-width:200px; word-wrap:break-word;"  href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+        </td>
+        <td>
+            <p class="reading-time">{{ .Date.Format (.Site.Params.dateFormat | default "January 2" ) }}</span>
+        </td>
+    </tr>
+    {{- end -}}
+</table>
+</ul>
+{{ end }}
+</div>

@@ -1,0 +1,154 @@
+body {
+    font-family: Roboto;
+    -webkit-font-smoothing:antialiased;
+    width: 700px;
+    margin: auto;
+    font-weight:500; 
+    font-size:18px; 
+    line-height:27px; 
+}
+
+h1 { 
+    line-height: 36px;
+    font-size: 28px;
+    color: #6495ED;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-family: "Roboto Mono";
+}
+
+h2 { 
+    font-family: "Roboto";
+    color: #6495ED;
+    -webkit-font-smoothing:antialiased
+}
+
+h4 {
+    font-family: "Roboto Mono";
+}
+
+.content { 
+    color: rgb(92, 110, 116);
+}
+
+strong {
+    color: black ;
+}
+
+a {
+
+    color: rgb(92, 110, 116);
+}
+
+img {
+    width: 700px;
+}
+
+table {
+    width: 700px;
+    font-family: 'Roboto';
+    font-weight:300; 
+    font-size: 18px;
+    color: rgb(92, 110, 116);
+    -webkit-font-smoothing:antialiased
+}
+
+th {
+    border-bottom: 1px solid;
+    border-bottom-color: rgb(92, 110, 116);
+
+}
+
+td {
+    padding-top: 5px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    padding-top:25px;
+}
+
+.right {
+    float:right;
+}
+
+.block {
+    display:block;
+}
+
+.font12 { 
+    font-size:12pt;
+}
+
+.copy {
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-weight:300; 
+    font-size: 12px;
+}
+
+.navigation { 
+    font-family: 'Roboto Mono';
+    font-weight:300; 
+    font-size: 36px;
+    -webkit-font-smoothing:antialiased
+}
+
+.navigation_subheader { 
+    padding-top: 0px;
+    font-family: "Roboto Mono";
+    font-weight: 200;
+    font-size:18px;
+    color: #6495ED;
+
+    -webkit-font-smoothing:antialiased
+}
+
+.reading-time{
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    text-align: right;
+    color: gray;
+    margin: 0;
+}
+
+.title{
+
+    font-family: "Roboto";
+    font-size:18px;
+    line-height:27px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.spacer{
+    padding-bottom: 25px;
+}
+
+h3 .links{
+
+    font-family: "Roboto";
+    font-size: 16pt;
+    -webkit-font-smoothing:antialiased
+}
+
+.blue {
+    color: #6495ED !important;
+}
+
+.post-body {
+    margin-top:275px;
+}
+
+.nounderline {
+    text-decoration:none;
+}
+
+.black {
+    color:black;
+}
+
+.footer {
+    padding-top: 25px;
+}

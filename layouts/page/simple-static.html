@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<body width="700 px;">
+    <div class="post-body" style="">
+
+        <h1>{{.Title}} </h1>
+
+        <div class="content"> 
+            {{.Content}}
+        </div>
+        <hr/> 
+
+    </div>
+</body>
+
+{{ partial "footer.html" . }}

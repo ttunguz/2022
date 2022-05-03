@@ -1,0 +1,25 @@
+
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<div class="post-body">
+
+{{ range .Site.RegularPages.GroupByDate "2006" }}
+<h2>{{ .Key }}</h2>
+
+<table width="100%">
+    {{ range where .Pages "Type" "post"  }}
+    <tr>
+        <td width="70%" style="padding-top:10px">
+            <a class="title" style="max-width:200px; word-wrap:break-word;"  href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+        </td>
+        <td>
+            <p class="reading-time">{{ .Date.Format (.Site.Params.dateFormat | default "January 2" ) }}</span>
+        </td>
+    </tr>
+    {{- end -}}
+</table>
+</ul>
+{{ end }}
+</div>
+{{ partial "footer.html" . }}
+

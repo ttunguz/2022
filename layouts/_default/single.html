@@ -4,7 +4,7 @@
 <body width="700 px;">
     <div class="post-body" style="">
 
-        <p class="reading-time">{{.ReadingTime}} minute read / {{.Date.Format "May 1, 2006" }} /
+        <p class="reading-time">{{.ReadingTime}} minute read / {{.Date.Format "Jan 2, 2006" }} /
 {{ if isset .Params "categories" -}}
   {{ range  $name := .Params.categories -}}
 	{{ with site.GetPage (printf "/%s" ($name | urlize )) -}} 

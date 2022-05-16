@@ -162,6 +162,13 @@ li {
   body {
       font-size:22px;
       line-height:27px;
+      padding: 5px;
+      margin: 10px;
+      width: 400px;
+  }
+
+  img{
+      width: 400px;
   }
 }
 

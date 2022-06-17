@@ -2,6 +2,12 @@
     <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | default "" }}" />
    <script async data-uid="9d2fbc53bb" src="https://ttunguz.ck.page/9d2fbc53bb/index.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   {{- $title := ( .Title ) -}}
+   {{- $siteTitle := ( .Site.Title ) -}}
+   {{- $sep := ( .Site.Params.seo.titleSeparator | default "•" ) -}}
+   {{- $title404 := ( .Site.Params.info.title404 | default $title ) -}}
+  <title>  {{ $title }} by @ttunguz </title>   
+
 </head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" onload="this.media='all'">
 <link rel="stylesheet" href="/css/custom.css">

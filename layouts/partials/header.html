@@ -7,6 +7,14 @@
    {{- $sep := ( .Site.Params.seo.titleSeparator | default "•" ) -}}
    {{- $title404 := ( .Site.Params.info.title404 | default $title ) -}}
   <title>  {{ $title }} by @ttunguz </title>   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4F4YS21RXL"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4F4YS21RXL');
+    </script>
 
 </head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" onload="this.media='all'">

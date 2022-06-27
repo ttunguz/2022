@@ -4,8 +4,9 @@
 <div class="post-body">
     <h2 class="blue">Posts by Category</h2>
     <ul>
-    {{ range .Pages }}
-    <a class="title" style="max-width:200px; word-wrap:break-word;"  href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a> | 
-    {{- end -}}
+        {{ range .Pages }}
+        <a class="title" style="max-width:200px; word-wrap:break-word;"  href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a> | 
+        {{- end -}}
+    </ul>
 </div>
 

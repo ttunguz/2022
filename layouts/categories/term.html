@@ -1,14 +1,13 @@
-this is a test
 
 {{ partial "header.html" . }}
 {{ partial "navigation.html" . }}
 
 <div class="post-body">
 <h2 class="blue" style="text-transform:capitalize">{{ with .GetPage .RelPermalink }}{{.Title}}{{ end }}
-{{ range .Pages.GroupByDate "2006" }}
 
 </h2>
-
+{{ range .Pages.GroupByDate "2006" }}
+<h2 class="blue">{{ .Key }}</h2>
 <table width="100%">
     {{ range .Pages }}
     <tr>

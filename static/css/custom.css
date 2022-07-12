@@ -15,7 +15,7 @@ h1 {
     color: #6495ED;
     padding-bottom: 30px;
     padding-top: 20px;
-    font-family: "Roboto Mono";
+    font-family: "Noto Sans Mono";
 }
 
 h2 { 
@@ -25,7 +25,10 @@ h2 {
 }
 
 h4 {
-    font-family: "Roboto Mono";
+    font-family: "Noto Sans Mono";
+    color: rgb(92, 110, 116);
+    text-decoration:none;
+
 }
 
 h5 {
@@ -93,13 +96,13 @@ td {
 
 .copy {
     text-align: center;
-    font-family: 'Roboto Mono';
+    font-family: 'Noto Sans Mono';
     font-weight:300; 
     font-size: 12px;
 }
 
 .navigation { 
-    font-family: 'Roboto Mono';
+    font-family: 'Noto Sans Mono';
     font-weight:300; 
     font-size: 36px;
     -webkit-font-smoothing:antialiased
@@ -107,7 +110,7 @@ td {
 
 .navigation_subheader { 
     padding-top: 0px;
-    font-family: "Roboto Mono";
+    font-family: "Noto Sans Mono";
     font-weight: 200;
     font-size:18px;
     color: #6495ED;
@@ -116,7 +119,7 @@ td {
 }
 
 .reading-time{
-    font-family: "Roboto Mono";
+    font-family: "Noto Sans Mono";
     font-size: 14px;
     text-align: right;
     color: gray;
@@ -148,7 +151,7 @@ h3 .links{
 }
 
 .post-body {
-    margin-top:275px;
+    margin-top:200px;
 }
 
 .nounderline {
@@ -172,17 +175,17 @@ blockquote {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-      font-size:22px;
-      line-height:27px;
-      padding: 5px;
-      margin: 10px;
-      width: 375px;
-  }
+    body {
+        font-size:22px;
+        line-height:27px;
+        padding: 5px;
+        margin: 10px;
+        width: 375px;
+    }
 
-  img{
-      width: 375px;
-  }
+    img{
+        width: 375px;
+    }
 }
 
 

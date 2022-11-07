@@ -1,31 +1,35 @@
+@font-face {
+  font-family: "MaisonNeue";
+  src: url("/fonts/MaisonNeue.woff") format('woff');
+}
 body {
-    font-family: Roboto;
+    font-family: MaisonNeue;
     -webkit-font-smoothing:antialiased;
     width: 700px;
     margin: auto;
-    font-weight:500; 
+    font-weight:400; 
     font-size:18px; 
-    line-height:27px; 
+    line-height:24px; 
 
 }
 
 h1 { 
-    line-height: 36px;
-    font-size: 28px;
-    color: #6495ED;
+    line-height: 49.5px;
+    font-size: 46px;
+    font-weight: 400;
     padding-bottom: 30px;
     padding-top: 20px;
-    font-family: "Noto Sans Mono";
+    font-family: "MaisonNeue";
 }
 
 h2 { 
-    font-family: "Roboto";
+    font-family: "MaisonNeue";
     color: #6495ED;
     -webkit-font-smoothing:antialiased
 }
 
 h4 {
-    font-family: "Noto Sans Mono";
+    font-family: "MaisonNeue";
     color: rgb(92, 110, 116);
     text-decoration:none;
 
@@ -37,7 +41,13 @@ h5 {
 }
 
 .content { 
-    color: rgb(92, 110, 116);
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-block-start: 0em;
+    word-break: break-word;
+    margin-block-end: 0em;
 }
 
 strong {
@@ -45,8 +55,7 @@ strong {
 }
 
 a {
-
-    color: rgb(92, 110, 116);
+    color: black;
 }
 
 img {
@@ -57,12 +66,12 @@ img {
 
 table {
     width: 100%;
-    font-family: 'Roboto';
+    font-family: 'MaisonNeue';
     padding-top: 10px;
     padding-bottom: 35px;
     font-weight:300; 
     font-size: 18px;
-    color: rgb(92, 110, 116);
+    color: black;
     -webkit-font-smoothing:antialiased
 }
 
@@ -96,13 +105,13 @@ td {
 
 .copy {
     text-align: center;
-    font-family: 'Noto Sans Mono';
+    font-family: 'MaisonNeue';
     font-weight:300; 
     font-size: 12px;
 }
 
 .navigation { 
-    font-family: 'Noto Sans Mono';
+    font-family: 'MaisonNeue';
     font-weight:300; 
     font-size: 36px;
     -webkit-font-smoothing:antialiased
@@ -110,7 +119,7 @@ td {
 
 .navigation_subheader { 
     padding-top: 0px;
-    font-family: "Noto Sans Mono";
+    font-family: "MaisonNeue";
     font-weight: 200;
     font-size:18px;
     color: #6495ED;
@@ -119,7 +128,7 @@ td {
 }
 
 .reading-time{
-    font-family: "Noto Sans Mono";
+    font-family: "MaisonNeue";
     font-size: 14px;
     text-align: right;
     color: gray;
@@ -128,7 +137,7 @@ td {
 
 .title{
 
-    font-family: "Roboto";
+    font-family: "MaisonNeue";
     font-size:18px;
     line-height:27px;
     padding-bottom: 10px;
@@ -141,7 +150,7 @@ td {
 
 h3 .links{
 
-    font-family: "Roboto";
+    font-family: "MaisonNeue";
     font-size: 16pt;
     -webkit-font-smoothing:antialiased
 }
@@ -188,4 +197,8 @@ blockquote {
     }
 }
 
-
+code {
+    font-size: 20px;
+    font-weight: bold;
+    background: lightgray; 
+}

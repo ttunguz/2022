@@ -1,6 +1,7 @@
 @font-face {
   font-family: "MaisonNeue";
   src: url("/fonts/MaisonNeue.woff") format('woff');
+  font-display: swap;
 }
 body {
     font-family: MaisonNeue;

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | default "" }}" />
    <script async data-uid="9d2fbc53bb" src="https://ttunguz.ck.page/9d2fbc53bb/index.js"></script>
@@ -6,6 +8,7 @@
    {{- $siteTitle := ( .Site.Title ) -}}
    {{- $sep := ( .Site.Params.seo.titleSeparator | default "•" ) -}}
    {{- $title404 := ( .Site.Params.info.title404 | default $title ) -}}
+   <meta name="description" content="{{ .Summary | default "" }}">
   <title>  {{ $title }} by @ttunguz </title>   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4F4YS21RXL"></script>
     <script>

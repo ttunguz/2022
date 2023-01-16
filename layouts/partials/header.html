@@ -8,7 +8,7 @@
    {{- $siteTitle := ( .Site.Title ) -}}
    {{- $sep := ( .Site.Params.seo.titleSeparator | default "•" ) -}}
    {{- $title404 := ( .Site.Params.info.title404 | default $title ) -}}
-   <meta name="description" content="{{ .Summary | default "" }}">
+   <meta name="description" content="{{ .Summary | default "Tomasz Tunguz :  A data-driven blog focused on the most important questions for startups & venture capital." }}">
   <title>  {{ $title }} by @ttunguz </title>   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4F4YS21RXL"></script>
     <script>

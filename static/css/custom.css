@@ -59,6 +59,14 @@ a {
     color: black;
 }
 
+.header a {
+    color: black;
+}
+
+.nounderline a{
+    color: gray;
+}
+
 img {
     width: 700px;
     padding-top: 25px;
@@ -123,9 +131,14 @@ td {
     font-family: "MaisonNeue";
     font-weight: 200;
     font-size:18px;
-    color: #6495ED;
+    //color: #6495ED;
 
     -webkit-font-smoothing:antialiased
+}
+
+.gray {
+    color: rgb(92, 110, 116);
+    text-decoration:none;
 }
 
 .reading-time{
@@ -166,7 +179,14 @@ h3 .links{
 
 .nounderline {
     text-decoration:none;
+    color: gray;
 }
+
+.nounderline_gray {
+    text-decoration:none;
+    color: rgb(92, 110, 116);
+}
+
 
 .black {
     color:black;

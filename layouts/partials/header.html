@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | default "" }}" />
    <script async data-uid="9d2fbc53bb" src="https://ttunguz.ck.page/9d2fbc53bb/index.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +12,10 @@
    {{- $title404 := ( .Site.Params.info.title404 | default $title ) -}}
    <meta name="description" content="{{ .Summary | default "Tomasz Tunguz :  A data-driven blog focused on the most important questions for startups & venture capital." }}">
   <title>  {{ $title }} by @ttunguz </title>   
+  
+  <!-- Structured Data for Google -->
+  {{ partial "structured-data.html" . }}
+  
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4F4YS21RXL"></script>
     <script>
           window.dataLayer = window.dataLayer || [];
